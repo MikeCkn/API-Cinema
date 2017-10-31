@@ -27,8 +27,8 @@ render() {
         return (
                 <div>
                     <p className="alignCards">{this.state.film.map(item => {
-                        return  <p className="cardFilm">
-                                    <p className="titleFilm">{item.title}</p> 
+                        return  <p className="cardFilm animated zoomInLeft">
+                                    <p className="titleFilm animated fadeInLeftBig">{item.title}</p> 
                                     with <span className="actorsFilm">{item.actors[0]} {item.actors[1]}</span>
                                     <p className="yearFilm">{item.year}</p>
                                     <img className="imageFilm" src={item.image} alt=""/>
