@@ -50,23 +50,28 @@ exports.default = function (_ref) {
     //v1/cinema/add
     api.post("/add", function (req, res) {
         var newRest = new _film2.default(req.body);
-
         newRest.save(function (err) {
             if (err) {
                 res.send(err);
             }
-            res.json({ message: req.body.title + ' saved successfully' });
+            res.json({
+                message: req.body.title + ' saved successfully'
+            });
         });
     });
 
     //DELETE METHOD
     //v1/cinema/id
     api.delete('/:id', function (req, res) {
-        _film2.default.remove({ _id: req.params.id }, function (err, film) {
+        _film2.default.remove({
+            _id: req.params.id
+        }, function (err, film) {
             if (err) {
                 res.send(err);
             }
-            res.json({ message: req.body.title + ' deleted successfully' });
+            res.json({
+                message: req.body.title + ' deleted successfully'
+            });
         });
     });
 

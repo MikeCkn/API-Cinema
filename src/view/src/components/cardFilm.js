@@ -26,14 +26,14 @@ render() {
         console.log(this.state.film)
         return (
                 <div>
-                    <p className="alignCards">{this.state.film.map(item => {
-                        return  <p className="cardFilm animated zoomInLeft">
-                                    <p className="titleFilm animated fadeInLeftBig">{item.title}</p> 
-                                    with <span className="actorsFilm">{item.actors[0]} {item.actors[1]}</span>
-                                    <p className="yearFilm">{item.year}</p>
+                    <div className="alignCards">{this.state.film.map(item => {
+                        return  <p key={item._id} className="cardFilm animated zoomInLeft">
+                                    <span className="titleFilm animated fadeInLeftBig">{item.title}</span> 
+                                    with <span className="actorsFilm">{item.actors}</span>
+                                    <span className="yearFilm">{item.year}</span>
                                     <img className="imageFilm" src={item.image} alt=""/>
                                 </p>
-                        })} </p>
+                        })} </div>
                 </div> 
             )}
             }

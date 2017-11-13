@@ -1,7 +1,5 @@
 import express from 'express';
 import http from 'http';
-import bodyParser from 'body-parser';
-import mongoose from 'mongoose';
 import config from './config';
 import routes from './routes';
 import cors from 'cors';
@@ -10,9 +8,7 @@ let app = express();
 app.server = http.createServer(app);
 // MIDDLEWARE
 //PARSE APPLICATION/JSON
-app.use(bodyParser.json({
-    limit : config.bodyLimit
-}))
+// app.use();
 
 // PASSPORT CONFIG
 // API ROUTES V1
