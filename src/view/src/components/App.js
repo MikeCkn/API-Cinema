@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
 import '../styles/App.css';
-import CardFilm from './cardFilm';
+import CardMovie from './Movie/cardMovie';
 import Animatecss from 'animate.css';
-import AddElement from './addElement';
+import FormAddMovie from './Movie/formAddMovie';
 
 class App extends Component {
   render() {
@@ -12,8 +12,8 @@ class App extends Component {
         <header className="App-header animated slideInRight">
           <img src={logo} className="App-logo" alt="logo" />
         </header>
-        <AddElement/>
-        <CardFilm/>
+        <FormAddMovie/>
+        <CardMovie/>
       </div>
     );
   }

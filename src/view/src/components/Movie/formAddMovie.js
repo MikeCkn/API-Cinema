@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class AddElement extends Component {
+class FormAddMovie extends Component {
     render() {
         return (
             <div>
@@ -16,4 +16,4 @@ class AddElement extends Component {
     }
 }
 
-export default AddElement;
+export default FormAddMovie;

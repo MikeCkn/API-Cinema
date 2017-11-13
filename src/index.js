@@ -14,7 +14,7 @@ app.server = http.createServer(app);
 // API ROUTES V1
 app.use(cors());
 
-app.use('/v1', routes);
+app.use('/', routes);
 
 app.server.listen(config.port);
 console.log(`Started on port ${app.server.address().port}`);
