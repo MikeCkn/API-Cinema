@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import Wowjs from 'wowjs';
 import Animatecss from 'animate.css';
 
-class cardFilm extends Component {
+class cardMovie extends Component {
 
   state = {
     film: []
@@ -38,4 +38,4 @@ render() {
             )}
             }
 
-export default cardFilm;
+export default cardMovie;

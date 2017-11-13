@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import logo from '../logo.svg';
 import '../styles/App.css';
-import CardMovie from './Movie/cardMovie';
 import Animatecss from 'animate.css';
-import FormAddMovie from './Movie/formAddMovie';
+
+import {CardMovie, FormAddMovie} from './Movie';
 
 class App extends Component {
   render() {
